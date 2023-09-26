@@ -18,8 +18,6 @@ def main():
     while True:
         for event in pg.event.get():
             if event.type == pg.QUIT: return
-        
-        
         # 画像surfaceを貼り付け
         screen.blit(bg_img, [-x, 0])
         screen.blit(bg_r_img, [1600-x, 0])
