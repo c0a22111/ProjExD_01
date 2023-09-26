@@ -15,10 +15,9 @@ def main():
     while True:
         for event in pg.event.get():
             if event.type == pg.QUIT: return
-
         # 画像surfaceを貼り付け
         screen.blit(bg_img, [0, 0])
-        screen.blit(fig_img, [0, 0])
+        screen.blit(imgs[tmr%2], [0, 0])
         pg.display.update()
         tmr += 1        
         clock.tick(10)
